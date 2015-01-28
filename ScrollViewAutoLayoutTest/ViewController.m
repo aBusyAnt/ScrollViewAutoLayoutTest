@@ -28,7 +28,6 @@
         NSDictionary *dic = @{kRequestContent:[NSString stringWithFormat:@"[%d]看清了很多人，却不能随意拆穿；讨厌着很多人，却又不能轻易翻脸。有时候，生活就是要逼自己变得逆来顺受，宠辱不惊.",i],kRequestIcon:@"http://img0.bdstatic.com/img/image/shouye/sheying0128.jpg"};
         [_testArray addObject:dic];
     }
-    _iScrollView.contentSize  = CGSizeMake(self.view.bounds.size.width, 415+_iTableView.contentSize.height);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -47,7 +46,7 @@
 }
 
 
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
      static NSString *CellIdentifier = @"MyCustomCell";
      MyCustomCell *cell = (MyCustomCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
      if (cell == nil) {
@@ -65,51 +64,5 @@
          
      }
      return cell;
- }
- 
-
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-//    if(_iTableView.frame.size.height != _iTableView.contentSize.height)
-//    {
-//        CGRect newFrame = _iTableView.frame;
-//        newFrame.size = _iTableView.contentSize;
-//        _iTableView.frame = newFrame;
-//        _iScrollView.contentSize = CGSizeMake(self.view.bounds.size.width, _iTableView.frame.origin.y + newFrame.size.height);
-//        
-//    }
-//}
+}
 @end

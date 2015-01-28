@@ -16,7 +16,6 @@
 		44DB92171A77AB6E0004EF77 /* ScrollViewAutoLayoutTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44DB92161A77AB6E0004EF77 /* ScrollViewAutoLayoutTestTests.m */; };
 		C965BC021A792B8D00AF770D /* MyCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C965BC001A792B8D00AF770D /* MyCustomCell.m */; };
 		C965BC031A792B8D00AF770D /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C965BC011A792B8D00AF770D /* MyCustomCell.xib */; };
-		C965BC061A792E3300AF770D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C965BC051A792E3300AF770D /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +45,6 @@
 		C965BBFF1A792B8D00AF770D /* MyCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomCell.h; sourceTree = "<group>"; };
 		C965BC001A792B8D00AF770D /* MyCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomCell.m; sourceTree = "<group>"; };
 		C965BC011A792B8D00AF770D /* MyCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
-		C965BC041A792E3300AF770D /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		C965BC051A792E3300AF770D /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +94,6 @@
 				C965BBFF1A792B8D00AF770D /* MyCustomCell.h */,
 				C965BC001A792B8D00AF770D /* MyCustomCell.m */,
 				C965BC011A792B8D00AF770D /* MyCustomCell.xib */,
-				C965BC041A792E3300AF770D /* TableViewController.h */,
-				C965BC051A792E3300AF770D /* TableViewController.m */,
 				44DB92071A77AB6E0004EF77 /* Images.xcassets */,
 				44DB92091A77AB6E0004EF77 /* LaunchScreen.xib */,
 				44DB91FA1A77AB6E0004EF77 /* Supporting Files */,
@@ -236,7 +231,6 @@
 				44DB92031A77AB6E0004EF77 /* ViewController.m in Sources */,
 				44DB92001A77AB6E0004EF77 /* AppDelegate.m in Sources */,
 				C965BC021A792B8D00AF770D /* MyCustomCell.m in Sources */,
-				C965BC061A792E3300AF770D /* TableViewController.m in Sources */,
 				44DB91FD1A77AB6E0004EF77 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
